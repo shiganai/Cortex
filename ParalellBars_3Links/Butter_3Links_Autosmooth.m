@@ -16,7 +16,7 @@ np = size(Bar_Data_All(:,2:end),2)/3; % 3 * 2 * 2 + 51;
 np = size(Body_Data_All,2)/3; % 3 * 2 * 2 + 51;
 [Body_Data_All, ~] = autosmooth(Body_Data_All,np,nFr,time_int,g);
 
-Cut_Range = find(abs(Data_Time - 5) < 1/400):find(abs(Data_Time - 7.965) < 1/400);
+Cut_Range = find(abs(Data_Time - 6.5650) < 1/400):find(abs(Data_Time - 7.965) < 1/400);
 Bar_Data_All = Bar_Data_All(Cut_Range, :); % 1598 番目が離手
 Body_Data_All = Body_Data_All(Cut_Range, :);
 
